@@ -1,0 +1,12 @@
+.row
+  - @resource.picture_details.each do |picture_detail|
+    = bootstrap_thumbnail(image_options: { src: main_app.url_for(picture_detail.asset) }) do
+      %h5= picture_detail.title
+      %p= picture_detail.description
+      = link_to([:edit, picture_detail], class: 'btn btn-responsive btn-primary') do
+        %span.glyphicon.glyphicon-pencil
+        %span.btn-text= t('.edit')
+      .pull-right
+        = link_to([picture_detail], class: 'btn btn-responsive btn-danger', method: :delete, data: { confirm: I18n.t('.confirmations.delete') }) do
+          %span.glyphicon.glyphicon-fire
+          %span.btn-text= t('.destroy')

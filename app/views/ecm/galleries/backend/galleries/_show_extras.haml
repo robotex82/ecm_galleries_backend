@@ -1,0 +1,3 @@
+= collection_table(collection: @resource.assets, resource_class: ActiveStorage::Attachment) do |t|
+  = t.id
+  = t.timestamp :created_at, format: :short

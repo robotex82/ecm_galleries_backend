@@ -1,0 +1,5 @@
+de:
+  classes:
+    ecm/galleries/backend/engine: Bilder
+  routes:
+    ecm-galleries-backend-engine: bilder

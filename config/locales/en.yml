@@ -1,0 +1,5 @@
+en:
+  classes:
+    ecm/galleries/backend/engine: Files
+  routes:
+    ecm-galleries-backend-engine: files
