@@ -13,3 +13,5 @@ de:
           show_extras:
             destroy: Löschen
             edit: Bearbeiten
+            publish: Veröffentlichen
+            unpublish: Zurückziehen

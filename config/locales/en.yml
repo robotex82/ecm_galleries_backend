@@ -13,3 +13,5 @@ en:
           show_extras:
             destroy: Delete
             edit: Edit
+            publish: Publish
+            unpublish: Unpublish

@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "~> 5.2.0.rc1"
   s.add_dependency "ecm_galleries"
+  s.add_dependency "rao-query"
   s.add_dependency "twitter-bootstrap-components-rails"
 
   s.add_development_dependency "sqlite3"

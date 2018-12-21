@@ -9,6 +9,9 @@ module Ecm
 
         helper Twitter::Bootstrap::Components::Rails::V3::ComponentsHelper
 
+        include Rao::Query::Controller::QueryConcern
+        view_helper Rao::Query::ApplicationHelper, as: :query_helper
+
         def self.resource_class
           Ecm::Galleries::PictureDetail
         end
@@ -16,7 +19,8 @@ module Ecm
         private
 
         def load_collection_scope
-          super.joins(:picture_gallery).order(picture_gallery_id: :asc, position: :asc)
+          scope = super.joins(:picture_gallery).order(picture_gallery_id: :asc, position: :asc)
+          with_conditions_from_query(scope)
         end
 
         def after_destroy_location

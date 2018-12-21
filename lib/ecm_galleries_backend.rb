@@ -1,3 +1,4 @@
+require 'rao-query'
 require 'twitter-bootstrap-components-rails'
 require 'ecm_galleries'
 
