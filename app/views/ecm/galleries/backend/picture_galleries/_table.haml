@@ -1,5 +1,5 @@
 = table.column :preview do |resource|
-  - if resource.picture_details.first.present?
+  - if resource.picture_details.first.try(:asset).present?
     - bootstrap_thumbnail(image_options: { src: main_app.url_for(resource.picture_details.first.asset) })
 = table.column :name, sort: true
 = table.column :picture_details_count

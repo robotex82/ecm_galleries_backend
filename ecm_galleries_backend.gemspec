@@ -15,8 +15,8 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "rails", "~> 5.2.0.rc1"
-  s.add_dependency "ecm_galleries"
+  s.add_dependency "rails", ">= 5.2.0"
+  s.add_dependency "ecm_galleries", '>= 0.3.0'
   s.add_dependency "rao-query"
   s.add_dependency "twitter-bootstrap-components-rails"
 

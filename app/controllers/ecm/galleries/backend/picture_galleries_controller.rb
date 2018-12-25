@@ -14,7 +14,7 @@ module Ecm
         private
 
         def permitted_params
-          params.require(:picture_gallery).permit(:name, :description, :published, assets: [])
+          params.require(:picture_gallery).permit(:name, :description, :published, { assets: [], overwrite_assets: [], append_assets: [] })
         end
       end
     end
